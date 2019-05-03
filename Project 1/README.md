@@ -1,7 +1,10 @@
+Assignment 1a Collab Link: [EVA-1A.ipynb](https://colab.research.google.com/drive/1BCpxdDAT0HMdCSf5J6EpaCGP93Gt3lRA)
+***
+
 <b>Q1. </b><I>What are Channels and Kernels (according to EVA)?</I>
 > A <b>Kernel</b> is a randomly allocated weight matrix (usually 3x3) that is traversed and convolved over the image. One kernel extracts a single feature from the image.  
 > The output of this covolution can be considered as a set of <b>Channels</b>. Each channel will have similar features.  
-For instance, 1 Greyscale Image (NxN)-> convolution with  64 kernels (3x3) -> 64 channels ((N-2)x(N-2))
+For instance, 1 Greyscale Image (NxN) &rarr; convolution with  64 kernels (3x3) &rarr; 64 channels ((N-2)x(N-2))
 
 ***
 <b>Q2. </b><I>Why should we only (well mostly) use 3x3 Kernels?</I>
@@ -37,7 +40,7 @@ Input Size|	Convolution	|Output Size|
 |33	|3x3	|31 |
 |31	|3x3	|29 |
 |29	|3x3	|27 |
-|27	|3x3	|25 |
+|27	|3x3	|25 
 |25	|3x3	|23 |
 |23	|3x3	|21 |
 |21	|3x3	|19 |
