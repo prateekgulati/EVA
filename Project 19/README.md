@@ -25,18 +25,18 @@ Aggregate all this data in a single folder and upload on colab.
 ### Results  
 #### Pretrained Model validation  
 
-![Pretrained model](Project%2019/assets/YoloPretrainedPrediction.png)
+![Pretrained model](assets/YoloPretrainedPrediction.png)
   
 #### Training the model on custom object  
 
 Custom object : Morty  
 
-<img src="Project%2019/assets/YoloMorty1.png" width=750px align="centre"/>
-<img src="Project%2019/assets/YoloMorty2.png" width=750px align="centre"/>
+<img src="assets/YoloMorty1.png" width=750px align="centre"/>
+<img src="assets/YoloMorty2.png" width=750px align="centre"/>
 
 #### GIF  
 
-<img src="Project%2019/assets/SchwiftyGif.gif" width=750px align="centre"/>
+<img src="assets/SchwiftyGif.gif" width=750px align="centre"/>
 
 #### Youtube Video:  
 
