@@ -40,4 +40,4 @@ A rolling window that stores the rewards for action taken. The size of the windo
 ## Simulation
 #### Youtube Video:  
 
-[![Watch the video](https://img.youtube.com/vi/kjkRsZe4TDc/hqdefault.jpg)]([https://www.youtube.com/watch?v=kjkRsZe4TDc](https://www.youtube.com/watch?v=kjkRsZe4TDc))
+[![Watch the video](https://img.youtube.com/vi/kjkRsZe4TDc/hqdefault.jpg)](https://www.youtube.com/watch?v=kjkRsZe4TDc)
