@@ -1,0 +1,99 @@
+#:kivy 1.0.9
+# ref: https://kivy.org/docs/tutorials/pong.html
+
+<Car>:
+    size: 20, 15
+    origin: 10, 7.5
+    canvas:
+        PushMatrix
+        Rotate:
+            angle: self.angle
+            origin: self.center
+        Rectangle:
+            pos: self.x - 20, self.y
+            size: self.width+20, self.height+20
+            source: "./images/ambulance.png"
+        PopMatrix
+
+
+<Ball1>:
+    size: 10,10
+    canvas:
+        Color:
+            rgba: 0.48,0.97,0.74,0.3
+        Ellipse:
+            pos: self.pos
+            size: self.size
+<Ball2>:
+    size: 10,10
+    canvas:
+        Color:
+            rgba: 0.48,0.97,0.74,0.3
+        Ellipse:
+            pos: self.pos
+            size: self.size
+
+<Ball3>:
+    size: 10,10
+    canvas:
+        Color:
+            rgba: 0.48,0.97,0.74,0.3
+        Ellipse:
+            pos: self.pos
+            size: self.size
+
+<Goal>:
+    size: 100,100
+    canvas:
+        Color:
+            rgba: 1,1,1,1
+        PushMatrix
+        Rectangle:
+            pos: 110,600
+            size: self.size
+            source: "./images/hospital.png"
+        PopMatrix
+
+<Origin>:
+    size: 40,40
+    canvas:
+        Color:
+            rgba: 1,1,1,1
+        Ellipse:
+            pos: self.pos
+            size: self.size
+            source: "./images/patient.png"
+
+
+<Game>:
+    car: game_car
+    ball1: game_ball1
+    ball2: game_ball2
+    ball3: game_ball3
+    goal: game_goal
+    origin: game_origin
+
+    canvas:
+        Rectangle:
+            pos: self.pos
+            size: 990, 700
+            source: "./images/citymap.jpg"
+
+    Car:
+        id: game_car
+        center: self.parent.center
+    Ball1:
+        id: game_ball1
+        center: self.parent.center
+    Ball2:
+        id: game_ball2
+        center: self.parent.center
+    Ball3:
+        id: game_ball3
+        center: self.parent.center
+    Goal:
+        id: game_goal
+        center: self.parent.center
+    Origin:
+        id: game_origin
+        center: self.parent.center
