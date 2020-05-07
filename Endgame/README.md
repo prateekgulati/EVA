@@ -1,6 +1,8 @@
 
 
-## # Twin Delayed DDPG - Reinforcement Learning
+
+
+## Twin Delayed DDPG - Reinforcement Learning
 
 ### Goal
 Autonomous car simulation on kivy environment using TD3 where the cab picks the passenger from the pickup point and drops to the marked location.  
@@ -12,13 +14,12 @@ Autonomous car simulation on kivy environment using TD3 where the cab picks the 
 ### Project structure
 - Model.py: Includes the code for TD3 models
 - CarApp.py: Includes the kivy app and the environment integration.
-- logs: Includes the logs for last run
-	- Logging format:
-		- Each iteration: < total_timesteps>, <previous state (excluding image)>, <previous state (excluding image)>, < action value>, < reward value>, < episodeOver>
-		- On episode completion: Total Timesteps: <> Episode Num: <> Reward: <>
+- car.ky: Kivy envoronment configuration
+- logs: Includes the logs for last run. Logging format:
+	- Each iteration: `total_timesteps`, `previous states (excluding image)`, `current states (excluding image)`, `action value`, `reward value`, `episodeOver`
+	- On episode completion: `Total Timesteps`, `Episode Num` , `Average Reward for the episode`
 - images: Includes images for the CarApp simulation
-
-
+- pytorch_models: Last saved pytorch model weights
 
 ### Environment
  - CityMap: This is a map of the city used as the reference for all states and actions
@@ -96,7 +97,8 @@ For detailed information about TD3, please refer to [earlier README](https://git
 This model has less than 4500 parameters.
 #### A single convolution block
 ![Name](assets/ConvBlock.png)
-
+  
+    
 #### Model architecture of actor and critic after incorporating CNN
 <img src="assets/ModelArchitecture.png" width=750px align="centre"/>
 
@@ -104,8 +106,7 @@ This model has less than 4500 parameters.
 ### Simulation
 #### Youtube Video:  
 
-
-![Watch the video](https://img.youtube.com/vi/Tn-WU3LbWFE/hqdefault.jpg)(https://www.youtube.com/watch?v=Tn-WU3LbWFE)
+![Watch the video](https://img.youtube.com/vi/Tn-WU3LbWFE/hqdefault.jpg)](https://www.youtube.com/watch?v=Tn-WU3LbWFE)
 
 ### Implementation strategy:
 - Implement the simulation on DQN and then repace DQN with TD3. 
