@@ -99,7 +99,7 @@ This model has less than 4500 parameters.
 ![Name](assets/ConvBlock.png)
   
     
-#### Model architecture of actor and critic after incorporating CNN
+#### Model architecture after incorporating CNN
 <img src="assets/ModelArchitecture.png" width=750px align="centre"/>
 
 
