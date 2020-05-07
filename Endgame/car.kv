@@ -1,0 +1,56 @@
+#:kivy 1.0.9
+# ref: https://kivy.org/docs/tutorials/pong.html
+
+<Car>:
+    size: 20, 10
+    origin: 10, 5
+    canvas:
+        PushMatrix
+        Rotate:
+            angle: self.angle
+            origin: self.center
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: "./images/car.png"
+        PopMatrix
+
+<Pickup>:
+    size: 40,40
+    canvas:
+        Color:
+            rgba: 1,1,1,1
+        Ellipse:
+            pos: self.pos
+            size: self.size
+            source: "./images/patient.png"
+
+<Drop>:
+    size: 1,1
+    canvas:
+        Color:
+            rgba: 1,1,1,1
+        Ellipse:
+            pos: self.pos
+            size: self.size
+            source: "./images/drop.png"
+
+<Game>:
+    car: game_car
+    pickup: game_pickup
+    drop: game_drop
+    canvas:
+        Rectangle:
+            pos: self.pos
+            size: 1429, 660
+            source: "./images/citymap.png"
+
+    Car:
+        id: game_car
+        center: self.parent.center
+    Pickup:
+        id: game_pickup
+        center: self.parent.center
+    Drop:
+        id: game_drop
+        center: self.parent.center
