@@ -106,7 +106,7 @@ This model has less than 4500 parameters.
 ### Simulation
 #### Youtube Video:  
 
-![Watch the video](https://img.youtube.com/vi/Tn-WU3LbWFE/hqdefault.jpg)](https://www.youtube.com/watch?v=Tn-WU3LbWFE)
+[![Watch the video](https://img.youtube.com/vi/Tn-WU3LbWFE/hqdefault.jpg)](https://www.youtube.com/watch?v=Tn-WU3LbWFE)
 
 ### Implementation strategy:
 - Implement the simulation on DQN and then repace DQN with TD3. 
